@@ -16,7 +16,7 @@ export default function SingleRecipePage({ data: { recipe } }) {
         <div>
           <h2>{recipe.title}</h2>
           <h3>
-            {recipe.course}, {recipe.cuisne}
+            {recipe.course}, {recipe.cuisine}
           </h3>
           <div>
             <span>
