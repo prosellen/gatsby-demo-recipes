@@ -8,23 +8,13 @@ import Footer from './Footer';
 
 const SiteBorderStyles = styled.div`
   max-width: 1000px;
-  margin: 12rem auto 4rem auto;
-  margin-top: clamp(2rem, 10vw, 12rem);
-  background: white;
-  background-size: 1500px;
-  padding: 5px;
-  padding: clamp(5px, 1vw, 25px);
+  padding: 1rem 3rem 1rem;
+  background-color: #fff;
+  margin: 0 auto 4rem auto;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.044);
-  border: 5px solid white;
   @media (max-width: 1100px) {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    padding: 0.5rem 1rem 1rem;
   }
-`;
-
-const ContentStyles = styled.div`
-  background: white;
-  padding: 2rem;
 `;
 
 export default function Layout({ children }) {
@@ -33,11 +23,9 @@ export default function Layout({ children }) {
       <GlobalStyles />
       <Typography />
       <SiteBorderStyles>
-        <ContentStyles>
-          <Nav />
-          {children}
-          <Footer />
-        </ContentStyles>
+        <Nav />
+        {children}
+        <Footer />
       </SiteBorderStyles>
     </>
   );

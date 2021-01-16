@@ -1,8 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 
+import PoppinsRegular from '../assets/fonts/Poppins-Regular.ttf';
+
 const Typography = createGlobalStyle`
+  @font-face {
+    font-family: PoppinsRegular;
+    src: url(${PoppinsRegular});
+  }
   html {
-    font-family: FrenchFries, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: PoppinsRegular, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--black);
   }
   p, li {
@@ -14,9 +20,7 @@ const Typography = createGlobalStyle`
   }
   a {
     color: var(--black);
-    text-decoration-color: var(--red);
-    /* Chrome renders this weird with this font, so we turn it off */
-    text-decoration-skip-ink: none;
+    text-decoration-color: var(--blue);
   }
   mark, .mark {
     background: var(--yellow);
@@ -27,9 +31,6 @@ const Typography = createGlobalStyle`
   }
   .center {
     text-align: center;
-  }
-  .tilt {
-    transform: rotate(-2deg);
   }
 `;
 

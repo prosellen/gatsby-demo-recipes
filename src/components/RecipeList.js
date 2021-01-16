@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { MdAvTimer, MdAccessTime, MdTimelapse } from 'react-icons/md';
+import styled from 'styled-components';
+
+const SingleRecipeStyles = styled.div`
+  margin: 0.5rem 0 1.25rem;
+`;
 
 function SingleRecipe({ recipe }) {
   return (
-    <div>
+    <SingleRecipeStyles>
       <Link to={`/recipes/${recipe.slug}`}>
         <h2>{recipe.title}</h2>
       </Link>
@@ -22,7 +27,7 @@ function SingleRecipe({ recipe }) {
           <MdTimelapse /> {recipe.totalTime}
         </span>
       </div>
-    </div>
+    </SingleRecipeStyles>
   );
 }
 

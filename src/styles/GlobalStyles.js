@@ -7,14 +7,17 @@ const GlobalStyles = createGlobalStyle`
     --yellow: #ffc600;
     --white: #fff;
     --grey: #efefef;
+    --blue: rgba(30,104,152,1);
   }
-  html {
-    background-size: 450px;
-    background-attachment: fixed;
-    font-size: 10px;
+  html {    
+    font-size: 0.875rem;
+    height: 100%
   }
   body {
     font-size: 2rem;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, var(--blue) 100%);
+    background-attachment: fixed;
   }
   fieldset {
     border-color: rgba(0,0,0,0.1);
@@ -62,11 +65,6 @@ const GlobalStyles = createGlobalStyle`
   }
   img {
     max-width: 100%;
-  }
-  .tilt {
-    transform: rotate(-2deg);
-    position: relative;
-    display: inline-block;
   }
 `;
 
