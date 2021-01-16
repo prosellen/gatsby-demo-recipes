@@ -5,6 +5,21 @@ import styled from 'styled-components';
 
 const SingleRecipeStyles = styled.div`
   margin: 0.5rem 0 1.25rem;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(35px, 130px)) 1fr;
+    gap: 0.5rem;
+    align-items: center;
+
+    li {
+      text-align: left;
+      vertical-align: middle;
+    }
+  }
 `;
 
 function SingleRecipe({ recipe }) {
@@ -14,19 +29,21 @@ function SingleRecipe({ recipe }) {
         <h2>{recipe.title}</h2>
       </Link>
       <h3>
-        {recipe.course}, {recipe.cuisine}
+        {recipe.course} ({recipe.cuisine})
       </h3>
-      <div>
-        <span>
-          <MdAvTimer alt="Preperation Time" /> {recipe.prepTime}
-        </span>
-        <span>
-          <MdAccessTime /> {recipe.cookTime}
-        </span>
-        <span>
-          <MdTimelapse /> {recipe.totalTime}
-        </span>
-      </div>
+      <ul>
+        <li>
+          <MdAvTimer alt="Preperation Time" /> <span>Prep:</span>{' '}
+          {recipe.prepTime}
+        </li>
+        <li>
+          <MdAccessTime alt="Cook Time" /> <span>Cook:</span> {recipe.cookTime}
+        </li>
+        <li>
+          <MdTimelapse alt="Total Time" /> <span>Total:</span>{' '}
+          {recipe.totalTime}
+        </li>
+      </ul>
     </SingleRecipeStyles>
   );
 }

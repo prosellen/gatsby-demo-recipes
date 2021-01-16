@@ -10,11 +10,11 @@ const GlobalStyles = createGlobalStyle`
     --blue: rgba(30,104,152,1);
   }
   html {    
-    font-size: 0.875rem;
+    font-size: 100%;
     height: 100%
   }
   body {
-    font-size: 2rem;
+    font-size: 1rem;
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, var(--blue) 100%);
     background-attachment: fixed;

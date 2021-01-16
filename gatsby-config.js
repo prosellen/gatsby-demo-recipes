@@ -4,9 +4,9 @@ dotenv.config({ path: '.env' });
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Demo - Recipes',
+    title: 'LEY - Recipes (Gatsby Demo)',
     siteUrl: 'https://gatsby.recipes',
-    description: `It's this ... or McDonals.`,
+    description: `It's this ... or McDonalds.`,
     twitter: '@p_rosellen',
   },
   plugins: [
@@ -21,7 +21,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/',
+        path: './src/assets/images/',
       },
       __key: 'images',
     },

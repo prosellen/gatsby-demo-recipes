@@ -1,11 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import RecipeList from '../components/RecipeList';
+import SEO from '../components/SEO';
 
 export default function RecipesPage({ data, pageContext }) {
   const recipes = data.recipes.nodes;
   return (
     <>
+      <SEO title="Recipe List" />
       <RecipeList recipes={recipes} />
     </>
   );

@@ -1,60 +1,26 @@
+import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
-
-// styles
-const pageStyles = {
-  color: '#232129',
-  padding: '96px',
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-};
-
-const paragraphStyles = {
-  marginBottom: 48,
-};
-const codeStyles = {
-  color: '#8A6534',
-  padding: 4,
-  backgroundColor: '#FFF4DB',
-  fontSize: '1.25rem',
-  borderRadius: 4,
-};
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-};
-const listItemStyles = {
-  fontWeight: '300',
-  fontSize: '24px',
-  maxWidth: '560px',
-};
-
-const linkStyle = {
-  color: '#8954A8',
-  fontWeight: 'bold',
-  fontSize: '16px',
-  verticalAlign: '5%',
-};
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: 'none',
-  marginBottom: 24,
-};
-
-const descriptionStyle = {
-  color: '#232129',
-  fontSize: '14px',
-};
-
-const docLink = {
-  text: 'Documentation',
-  url: 'https://www.gatsbyjs.com/docs/',
-  color: '#8954A8',
-};
+import SEO from '../components/SEO';
 
 // markup
 const IndexPage = () => (
-  <main style={pageStyles}>
-    <title>Home Page</title>
+  <main>
+    <SEO title="Home Page" />
+    <h2>Welcome to this very random Gatsby demo page</h2>
+    <div>
+      <div>
+        <p>Here's an unnecessarily large image:</p>
+      </div>
+      <div>
+        <StaticImage src="../assets/images/pasta-794464_1920.jpg" width={300} />
+      </div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        voluptas nisi commodi tempora saepe rem quidem recusandae, quisquam
+        alias, natus dolores. Corporis iste accusamus, aperiam fugit voluptatem
+        veritatis aliquam veniam.
+      </p>
+    </div>
 
     <img
       alt="Gatsby G Logo"

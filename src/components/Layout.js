@@ -12,7 +12,7 @@ const SiteBorderStyles = styled.div`
   background-color: #fff;
   margin: 0 auto 4rem auto;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.044);
-  @media (max-width: 1100px) {
+  @media (max-width: 720px) {
     padding: 0.5rem 1rem 1rem;
   }
 `;
