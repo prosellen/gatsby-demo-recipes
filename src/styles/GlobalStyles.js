@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, var(--blue) 100%);
     background-attachment: fixed;
+    overflow-y: scroll;
   }
   fieldset {
     border-color: rgba(0,0,0,0.1);

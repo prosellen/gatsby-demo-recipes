@@ -22,6 +22,16 @@ const SingleRecipeStyles = styled.div`
   }
 `;
 
+const RecipeListStles = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  @media (max-width: 820px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
 function SingleRecipe({ recipe }) {
   return (
     <SingleRecipeStyles>
@@ -51,9 +61,11 @@ function SingleRecipe({ recipe }) {
 export default function RecipeList({ recipes }) {
   return (
     <div>
-      {recipes.map((recipe) => (
-        <SingleRecipe key={recipe.id} recipe={recipe} />
-      ))}
+      <RecipeListStles>
+        {recipes.map((recipe) => (
+          <SingleRecipe key={recipe.id} recipe={recipe} />
+        ))}
+      </RecipeListStles>
     </div>
   );
 }

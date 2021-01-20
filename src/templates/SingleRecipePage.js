@@ -11,6 +11,10 @@ const RecipeGrid = styled.div`
   @media (max-width: 720px) {
     grid-auto-flow: column;
   }
+
+  img {
+    object-fit: cover;
+  }
 `;
 
 const TimerGrid = styled.div`
