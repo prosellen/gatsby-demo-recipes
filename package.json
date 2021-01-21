@@ -53,12 +53,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prosellen/gatsby-demo-recipes.git"
+    "url": "git+https://git.ebsquared.de/eb2/eb2-gatsby-demo.git"
   },
   "author": "Peter Rosellen <peter.rosellen@outlook.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/prosellen/gatsby-demo-recipes/issues"
+    "url": "https://git.ebsquared.de/eb2/eb2-gatsby-demo/issues"
   },
-  "homepage": "https://github.com/prosellen/gatsby-demo-recipes#readme"
+  "homepage": "https://git.ebsquared.de/eb2/eb2-gatsby-demo#readme"
 }

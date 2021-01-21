@@ -2,7 +2,10 @@ import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import SEO from '../components/SEO';
 
-// markup
+// Just a simple HTML-Page
+// See the <SEO /> components down there? That uses "Helmet" to add elements in the component that get injected to the META-Tags
+// The <StaticImage /> is used to to a whole lot of magic to the image - but this only works for images that are sourced during build-time
+// (Compare this to the images in the individual recipes - those are just images loaded from an external source)
 const IndexPage = () => (
   <main>
     <SEO title="Home Page" />

@@ -9,7 +9,6 @@ export default function RecipesPage({ data, pageContext }) {
   return (
     <>
       <SEO title="Recipe List" />
-
       <RecipeList recipes={recipes} />
     </>
   );
